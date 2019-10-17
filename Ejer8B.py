@@ -3,7 +3,7 @@ import numpy as np
 import math
 #se piden los datos necesarios
 print("Este programa resuelve la ecuacion f(x)=sin(x)-csc(x)+1")
-xl=int(input("Inserte el valor del limite menor: "))
+xl=float(input("Inserte el valor del limite menor: "))
 xu=float(input("Inserte el valor del limite mayor: "))
 #se obtiene el primer xr
 xr=(xl+xu)/2
