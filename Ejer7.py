@@ -52,7 +52,7 @@ while True:
         break
     xr=xrn
     
-    c=c+1
+    
 
 #lineas para mostrar el grafico de error
 #se pasa la lista a arreglo
