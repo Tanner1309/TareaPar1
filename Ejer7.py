@@ -32,19 +32,17 @@ while True:
     xr=(xl+xu)/2
 print("El resultado mas cercano del primer intervalo es:",xr)    
 #Se hace el proceso con el segundo intervalo
-xl=-2
-xu=-0
-xr=(xl+xu)/2
+
 #se declara la lista donde se guardaran los valores de los errores 
 ve1=[]
 xrr1=[]
-xr=xr-((math.log1p(xr^2+1)-math.exp(xr/2)*math.cos(3.1416*xr))/(3.1416*math.exp(x/2)*math.sin(3.1416*xr)-((math.exp(x/2)*math.cos(3.1416*xr))/2)+((2*xr)/(xr*xr+1))))
+xr=xr-((math.log1p(xr^2+1)-math.exp(xr/2)*math.cos(3.1416*xr))/(3.1416*math.exp(xr/2)*math.sin(3.1416*xr)-((math.exp(xr/2)*math.cos(3.1416*xr))/2)+((2*xr)/(xr*xr+1))))
 #se declara la lista donde se guardaran los valores de los errores 
 while True:
     #se guarda el valor de xr para calcular el error
     xra=xr
     xrr.append(xr)
-    xrn=xr-((math.log1p(xr^2+1)-math.exp(xr/2)*math.cos(3.1416*xr))/(3.1416*math.exp(x/2)*math.sin(3.1416*xr)-((math.exp(x/2)*math.cos(3.1416*xr))/2)+((2*xr)/(xr*xr+1))))
+    xrn=xr-((math.log1p(xr^2+1)-math.exp(xr/2)*math.cos(3.1416*xr))/(3.1416*math.exp(xr/2)*math.sin(3.1416*xr)-((math.exp(xr/2)*math.cos(3.1416*xr))/2)+((2*xr)/(xr*xr+1))))
     #se evalua el error
     e=math.fabs(xra-xrn)
     ve.append(e)
